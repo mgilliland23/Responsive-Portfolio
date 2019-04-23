@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("../images/background.png");
+  margin: 0;
+  height:100%;
+}
+
+/* Set fonts for the different types of content on the site*/
+
+h1, h2{
+  font-family: "Georgia", Times, Times New Roman, serif;
+}
+
+a, p, label{
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+
+
+/* Style Header */
+.header {
+  background-color:white;
+  height: 60px;
+  border-bottom: solid 1px #dddddd;
+  margin: 0 auto; 
+  min-width: 960px;
+ }
+
+ /* align content insdie the header with the content on the page */
+ .headerWrapper{
+   width: 960px;
+   margin: 0 auto;
+   background-color:white;
+ }
+
+/* Style the links inside the header */
+.header a {
+  float: left;
+  color: #777777;
+  text-align: center;
+  padding: 0 20px;
+  text-decoration: none;
+  height: 60px;
+  line-height: 60px;
+  
+}
+
+/* Float my name to the left */
+.myName{
+  float:left;
+  background-color: #4aaaa5;
+  color: white;
+  margin: 0;
+  line-height: 60px;
+  padding: 0 40px;
+  height: 60px;
+  font-weight: normal;
+  font-size: 2em;
+  
+}
+
+/* Float the link section to the right */
+.navlinks-right {
+  float: right
+  
+}
+
+/* Change the color of links on hover */
+.header a:hover {
+  background-color: #4aaaa5;
+  color: white;
+}
+
+/*Style container that the sites content lies in*/
+.content{
+  margin: 40px auto;
+  width: 960px;
+  background: white;
+  border: solid 1px #dddddd;
+  overflow: hidden;
+  /* Set minimum height of the content wrapper so the footer is pushed to bottom
+     of the page. Navigation Header is 60 pixels. Content wrapper has top and bottom margin
+     of 40 pixels = 180 pixels total */
+  min-height: calc(100vh - 180px);
+}
+
+/* Style the heading inside the container */
+.content h2{
+  margin: 20px 40px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px #dddddd;
+  color: #4aaaa5;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Style all paraghraphs within the content container */
+.content p{
+  padding: 10px 40px;
+  line-height: 1.75em;
+  color: #777777;
+} 
+
+/* Align profile pic with heading */
+#profileImg{
+  padding: 10px 20px 10px 40px;
+  float: left;
+}
+
+form{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Style inputs for the contact form */
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  display: block;
+  padding: 12px;
+  padding-left: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+label{
+  color: #777777;
+}
+
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  opacity: .8;
+}
+
+/* Style the project cards for the portfolio page*/
+
+.content ul{
+  list-style-type: none;
+  padding-top: 20px;
+  margin-left: 40px;
+}
+
+.content li{
+  float: left;
+}
+
+
+.projectCard{
+  height: 150px;
+  width: 200px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  
+}
+
+/*Project Image */
+.projectCard img{
+  height: 150px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Change opactiy of the project image on hover */
+.projectCard:hover img{
+  opacity: .6;
+  
+}
+
+li a{
+  text-decoration: none;
+}
+
+/* Project Name */
+/* Overlap the project name over the project image*/
+.projectName{
+  height: 30px;
+  width: 200px;
+  background-color: #4aaaa5;
+  color: white !important;
+  line-height: 30px !important;
+  text-align: center;
+  position: absolute;
+  padding: 0 !important;
+  bottom: 10px;
+  left: 0;
+}
+
+/* Style Footer */
+
+footer{
+  background-color: #666666;
+  text-align: center;
+  border-top: solid 3px #4aaaa5;
+  width: 100%;
+  clear: both;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+  .headerWrapper{
+    width: 100%;
+  }
+  
+  .header{
+    min-width: 0;
+    width: 100%;
+    
+  }
+  .content{
+    width: 100%;
+    padding: 20px;
+  }
+
+  
+
+}
+  
+@media only screen and (max-width: 640px) {
+
+}
+  
+  
