@@ -252,7 +252,35 @@ footer{
 }
   
 @media only screen and (max-width: 640px) {
+  .headerWrapper{
+    width: 100%;
+  }
+  
+  .header{
+    min-width: 0;
+    width: 100%;
+    
+  }
 
+  .header a{
+    float: none;
+    padding: 20px;
+  }
+
+  .myName{
+    width: 100%;
+    text-align: center;
+  }
+
+  .navlinks-right{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
+  .content{
+    width: calc(100vw - 60px);
+    margin: 30px;
+  }
 }
   
   
